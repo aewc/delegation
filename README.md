@@ -2,7 +2,7 @@
 
 IC supports the delegation call, that is to say:
 * Identity A sign a update call request, and the msg.caller in canister will get the Principal of A.
-* Identity A sign a delegation, such as a temp Identity B, and use the delegation(Identity B) to sign a update call request, and the msg.caller in canister will get the Principal of A.
+* Identity A sign a delegation, such as the der encode public key of temp Identity B, and use the delegation(Identity B) to sign a update call request, and the msg.caller in canister will get the Principal of A.
 
 The delegation Identity now is supported by [forked agent-rs](https://github.com/flyq/agent-rs)
 
