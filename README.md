@@ -68,7 +68,8 @@ The subnet id of the canister is `gmq5v-hbozq-uui6y-o55wc-ihop3-562wb-3qspg-nnij
             challenge_key = "socfnxweyc";
         },
     )
-
+    
+    # the chars will always be "a", because it is in test mod
     $ dfx canister --network ic call vxmla-4aaaa-aaaah-aausa-cai register '(record {pubkey=vec{48:nat8;86:nat8;48:nat8;...;}; alias=""; credential_id=null; purpose=variant{authentication}; key_type=variant{unknown};}, record {key="socfnxweyc";chars="a";})'
     (variant { registered = record { user_number = 10_000 : nat64 } })
 
